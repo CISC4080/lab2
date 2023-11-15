@@ -10,6 +10,7 @@ Comment on the running time of your algorithms.
 
 Since a Makefile is provided, you can simply type command make to compile the program.
 
+```
 $ cd Lab2/
 $ ls
 .  ..  main.cpp	Makefile  util.cpp  util.h
@@ -17,7 +18,8 @@ $ make
 g++ -g --std=c++11 -c main.cpp
 g++ -g --std=c++11 -c util.cpp
 g++ -o lab2.exe -g --std=c++11 main.cpp util.cpp 
- 
+
+``` 
 
 ## General Guidance: 
 
@@ -25,26 +27,31 @@ The provided main.cpp basically test each of the functions one by one using seve
 
 You can simply use the following command to compile: 
 
-    make
+```
+ $ make
+```
 
-     The above command will use the rules specified in Makefile to compile all .cpp files as needed, and link them to create executable file lab2.exe.
+The above command will use the rules specified in Makefile to compile all .cpp files as needed, and link them to create executable file lab2.exe.
 
  You can pass a command line argument to lab2.exe, to specify which function you want to test. Please see main() function to see the options. Here are some examples:
 
-   ./lab2.exe binarysearch // test BinarySearch() function
-   ./lab2.exe sameset //test SameSet function 
+```
+ $ ./lab2.exe binarysearch // test BinarySearch() function
+ $ ./lab2.exe sameset //test SameSet function 
+```
+ If you don’t pass any argument, the program will test all functions:
 
-  If you don’t pass any argument, the program will test all functions:
-
-    ./lab2.exe    // testing all functions 
-
+```
+  $ ./lab2.exe    // testing all functions 
+```
 The program will report “passed sameset test cases”  etc. 
 
 ## Details: 
 
 -Here is a step-by-step instruction to finish this lab, for each step, add in your main some additional test cases to test the function you just write.  Implement the following functions in util.cpp.
 
-1. Implement BinarySearch function described below: 
+1. Implement BinarySearch function described below:
+```
 /* Search for v in sorted list[first...last]. If v appears in the sublist, return the index 
  * of its appearance; if v does not appear in the sublist, return the insert location
  * if v=[2,4,5,7,9], first=0, last=4, v=8, the function return 4
@@ -76,17 +83,22 @@ else      return BinarySearch (a, v, mid+1, last); //(... mid, last) also work
 } 
 
 }
+```
 
 2. Implement InsertionSort function either iteratively or recursively: 
 For iterative implementation: 
+```
 // You are required to use BinarySearch in your implementation of InsertionSort 
 void InsertionSort (vector<int> & list)
-
+```
 For recursive implementation
+```
 // You are required to use BinarySearch in your implementation of InsertionSort 
 void InsertionSort (vector<int> & list, int first, int last)
+```
 
 3. Implement the following function, and comment on the running time of your function in the function’s header, without using any data structure, or sorting the vector. 
+```
 /* Return a vector storing all distinct values in the input vector
  e.g., list=[2,4,4,4,2,1], return a vector containing [2,4,1]
  e.g., list=[1,1,4,5,1,3,2,2,2}, return a vector containing [1,4,5,3,2] 
@@ -118,9 +130,10 @@ vector<int> Distinct (vector<int> & list)   4.  Implement the following func
 
         */ 
 }
-
+```
 
 4.  Implement the following function, a) without using any data structure, b) using some data structure. 
+```
 /* Given two vectors of chars, check if the two vectors are permutations of each other, i.e., they contains same values, in same or different order.
 e.g.,      V1=[‘a’,’b’,’a’] and V2=[‘b’,’a’,’a’] stores same multi-set of data points: i.e., both contains two ‘a’, and one ‘b’.
 e.g.,      V3=[‘a’,’c’,’t’,’a’] and V4=[‘a’,’c’,’t’] are not same multi-set. V3 contains two ‘a’s, while V4 has only one ‘a’.  
@@ -143,6 +156,7 @@ same or different order); return false, if not. */ bool SameMultiSet (vector<c
 
         */ 
 } 
+```
 
 ### Notes: 
 
