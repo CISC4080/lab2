@@ -77,9 +77,12 @@ int BinarySearch (const vector<int> & list, int first, int last, int v)
 } 
 //general case 
 int mid = (first+last)/2; 
-if (v==a[mid]) return mid; 
-else if (v<a[mid])      return BinarySearch (a, v, first, mid-1); // (... first, mid) also works 
-else      return BinarySearch (a, v, mid+1, last); //(... mid, last) also works 
+if (v==a[mid])
+    return mid; 
+else if (v<a[mid])
+     return BinarySearch (a, v, first, mid-1); // (... first, mid) also works 
+else
+      return BinarySearch (a, v, mid+1, last); //(... mid, last) also works 
 } 
 
 }
@@ -113,14 +116,13 @@ vector<int> Distinct (vector<int> & list)   4.  Implement the following func
    @param list1, list2: two vectors of integers
    @pre: list1, list2 have been initialized
    @post: return true if list1 and list2 stores same values (in same or different order); 
-
-
-       return false, if not. */ bool SameSet (const vector<int> & list1, const vector<int> & list2)
+       return false, if not. */
+ bool SameSet (const vector<int> & list1, const vector<int> & list2)
 {
-           /* approach a: do not use any data structure */
+      /* approach a: do not use any data structure */
            
 
-           /* approach b: using unordered_set, we can implement this function 
+      /* approach b: using unordered_set, we can implement this function 
       More efficiently:   …..
 
 
@@ -128,7 +130,7 @@ vector<int> Distinct (vector<int> & list)   4.  Implement the following func
 
 
 
-        */ 
+    */ 
 }
 ```
 
@@ -141,12 +143,13 @@ e.g.,      V3=[‘a’,’c’,’t’,’a’] and V4=[‘a’,’c’,’t’]
 @param list1, list2: two vectors of chars
    @pre: list1, list2 have been initialized
    @post: return true if list1 and list2 stores same values (in
-same or different order); return false, if not. */ bool SameMultiSet (vector<char> list1, vector<char> list2)
+same or different order); return false, if not. */
+ bool SameMultiSet (vector<char> list1, vector<char> list2)
 {
-           /* approach a: do not use any data structure */
+       /* approach a: do not use any data structure */
            
 
-           /* approach b: using unordered_set, we can implement this function 
+       /* approach b: using unordered_set, we can implement this function 
       More efficiently:   …..
 
 
@@ -154,7 +157,7 @@ same or different order); return false, if not. */ bool SameMultiSet (vector<c
 
 
 
-        */ 
+   */ 
 } 
 ```
 
@@ -165,7 +168,7 @@ same or different order); return false, if not. */ bool SameMultiSet (vector<c
 
 ## Submit:
 Submit your util.cpp by going to the following autograder page:
-https://storm.cis.fordham.edu:8443/web/project/557
+TBA. 
 
 You have a total of 20 submissions opportunities, and 3 submissions on a particular day.
 There are two components for the grades:
