@@ -1,10 +1,11 @@
-# lab2
+# CISC 4080 lab2
 
 ## Goal:
--Implement  binarysearch, insertionsort, distinct, sameset, and samemultiset functions, following the direction.
-Comment on the running time of your algorithms. 
--Familiarize with C++ STL class vector
--Practice using make and Makefile to compile and test program 
+
+1. Implement  binarysearch, quicksort, insertionsort, distinct, sameset, and samemultiset functions.
+2. Comment on the running time of your algorithms. 
+3. Familiarize with C++ STL class vector
+4. Practice using make and Makefile to compile and test program 
 
 ## Download Starter Code:
 
