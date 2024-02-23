@@ -7,7 +7,9 @@
 3. Familiarize with C++ STL class vector
 4. Practice using make and Makefile to compile and test program 
 
-## Download Starter Code:
+## Starter Code:
+
+You can download the starter code by download it as a zip file. 
 
 Since a Makefile is provided, you can simply type command make to compile the program.
 
