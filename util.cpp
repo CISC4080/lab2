@@ -40,7 +40,6 @@ vector<int> Distinct(vector<int> & list)
 }
 
 
-
 bool SameSet (const vector<int> & list1, const vector<int> & list2)
 {
 	//Todo by you
@@ -48,17 +47,7 @@ bool SameSet (const vector<int> & list1, const vector<int> & list2)
 }
 
 
-bool SameMultiSet (vector<char>  list1, vector<char>  list2)
-{
-	//Todo by you. 
-	return false; //a place holder
 
-}
 
-//In-class illustration
-//return the value appears most frequently in data
-int mode (vector<int> data)
-{
 
-}
 
