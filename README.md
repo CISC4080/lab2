@@ -5,7 +5,8 @@
 1. Implement  binarysearch, insertionsort, quicksort, selection, distinct, and sameset functions.
 2. Comment on the running time of your algorithms. 
 3. Familiarize with C++ STL class **vector**, **unordered_set**.
-4. Practice using make and Makefile to compile and test program 
+4. Practice using make and Makefile to compile and test program .
+5. Practice reading/writing testcases. 
 
 ## Starter Code:
 
