@@ -11,6 +11,10 @@ void InsertionSort (vector<int> & list);
 //Recursive Insertion Sort
 void InsertionSort (vector<int> & list, int, int);
 
+void QuickSort(vector<int> & list, int left, int right);
+
+int Selection (vector<int> & list, int left, int right, int k);
+
 vector<int> Distinct(vector<int> & list);
 
 bool SameSet (const vector<int> & list1, const vector<int> & list2);
