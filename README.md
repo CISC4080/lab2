@@ -170,8 +170,7 @@ same or different order); return false, if not. */
 
 
 ## Submit:
-Submit your util.cpp by going to the following autograder page:
-TBA. 
+Submit your util.cpp by going to the following autograder page by March 8th, midnight (11:59pm). 
 
 You have a total of 20 submissions opportunities, and 3 submissions on a particular day.
 There are two components for the grades:
