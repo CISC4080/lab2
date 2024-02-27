@@ -31,6 +31,20 @@ void InsertionSort (vector<int> & list, int first, int last)
 
 }
 
+void QuickSort(vector<int> & list, int left, int right)
+{
+
+}
+
+//Return the k-th smallest element in list[left...right]
+//k=0,1, ... right-left+1 
+//if k=0, return the smallest value in the list,
+// if k=1, reutnr the 2nd smallest value ...
+int Selection (vector<int> & list, int left, int right, int k)
+{
+
+}
+
 vector<int> Distinct(vector<int> & list)
 {
 	vector<int> result;
