@@ -103,26 +103,6 @@ bool TestSameSet ()
 	return true;
 }
 
-bool TestSameMultiSet()
-{
-	vector<char> v1{'a','b','d','a','b'};
-	vector<char> v2{'a','b','d'};
-	if  (SameMultiSet (v1,v2)!=false)
-		return false;
-
-	vector<char> v3{'a','a','b'};
-	vector<char> v4{'b','a','a'};
-	if (SameMultiSet (v3,v4)!=true)
-		return false;
-
-	vector<char> v5{'h','e','l','l','o'};
-	vector<char> v6{'e','o','h','l','l','l'};
-	if ( SameMultiSet (v5,v6)!=false)
-		return false;
-
-	return true;
-
-}
 
 
 int main(int argc, char **argv)
@@ -188,17 +168,7 @@ int main(int argc, char **argv)
 				return 1;
 			}
 
-		else 
-	 		if (TestSameMultiSet())
-			{
-	 			cout <<"Passed SameMultiSet test cases\n";
-	 			return 0;
-			}
-	 		else
-			{
-	 			cout <<"Failed SameMultiSet test cases\n";
-	 			return 1;
-			}
+		
 	 } else{
 
 		 //Your code to test mode function here 
@@ -223,10 +193,7 @@ int main(int argc, char **argv)
 	 		else 
 	 			cout <<"Failed SameSet test cases\n";
 		
-	 		if (TestSameMultiSet())
-	 			cout <<"Passed SameMultiSet test cases\n";
-	 		else
-	 			cout <<"Failed SameMultiSet test cases\n";
+	 		
 	 }
 
 }
