@@ -37,9 +37,10 @@ void QuickSort(vector<int> & list, int left, int right)
 }
 
 //Return the k-th smallest element in list[left...right]
-//k=0,1, ... right-left+1 
-//if k=0, return the smallest value in the list,
-// if k=1, reutnr the 2nd smallest value ...
+//k=1, ... right-left+1 
+// if k=1, reutnr the smallest value;
+// if k=2, return the second smallest value,...
+// if k=right-left+1, return the largest value in list[left...right]
 int Selection (vector<int> & list, int left, int right, int k)
 {
 
