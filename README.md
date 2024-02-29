@@ -32,16 +32,20 @@ The provided main.cpp basically test each of the functions one by one using seve
 You can simply use the following command to compile: 
 
 ```
- $ make
+make lab2.exe
 ```
 
 The above command will use the rules specified in Makefile to compile all .cpp files as needed, and link them to create executable file lab2.exe.
 
 When you run the lab2.exe, it will test all functions one by one and report the results. 
 ```
-  $ ./lab2.exe    // testing all functions 
+./lab2.exe    
 ```
 
+To set an individual function, pass the testcase and subcase in the command line as follows (where we test the quicksort function):
+```
+./lab2.exe -tc="lab2" -sc="quicksort"
+```
 
 ## Submit:
 Submit your util.cpp by going to the following autograder page by March 8th, midnight (11:59pm). 
