@@ -44,7 +44,9 @@ When you run the lab2.exe, it will test all functions one by one and report the 
 
 
 ## Submit:
-Submit your util.cpp by going to the following autograder page (TBA) by March 8th, midnight (11:59pm). 
+Submit your util.cpp by going to the following autograder page by March 8th, midnight (11:59pm). 
+
+[Lab2 submission site](https://storm.cis.fordham.edu:8443/web/project/1499)
 
 You have a total of 20 submissions opportunities, and 3 submissions on a particular day.
 There are two components for the grades:
