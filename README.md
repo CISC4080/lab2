@@ -42,7 +42,7 @@ When you run the lab2.exe, it will test all functions one by one and report the 
 ./lab2.exe    
 ```
 
-To set an individual function, pass the testcase and subcase in the command line as follows (where we test the quicksort function):
+To test an individual function, pass the testcase and subcase in the command line as follows (where we test the quicksort function):
 ```
 ./lab2.exe -tc="lab2" -sc="quicksort"
 ```
