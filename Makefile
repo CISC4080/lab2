@@ -9,5 +9,8 @@ main.o: main.cpp util.h
 util.o: util.cpp util.h
 	$(CC) $(CFLAGS) -c util.cpp
 
+test: lab2.exe
+        ./lab2.exe -tc="$(TC)" -sc="$(SC)"
+
 clean:
 	rm util.o main.o lab2.exe
