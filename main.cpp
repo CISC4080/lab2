@@ -1,15 +1,9 @@
 /* Starter code for lab2
  */
-#include <iostream>
-#include <string>
-#include <string.h>
-#include "util.h"
-#include "doctest.h"
-#include <assert.h>
-using namespace std;
 
 
 #define DOCTEST_CONFIG_IMPLEMENT_WITH_MAIN
+#include <iostream>
 #include "util.h"
 #include <cstdlib>
 #include <string>
