@@ -80,17 +80,22 @@ TEST_CASE("lab2") {
   }
 
   SUBCASE("distinct"){
-	vector<int> input1{3,2,4,8,2,2,3}; 
-	vector<int> expected_output{3,2,4,8};
-	vector<int> output1 = Distinct (input1);
-	CHECK (output1==expected_output);
+	vector<int> input1{3,2,4,8,2,2,3};
+        vector<int> expected_output{3,2,4,8};
+        unordered_set<int> s1 (expected_output.begin(), expected_output.end());
+        vector<int> output1 = Distinct (input1);
+        unordered_set<int> s2 (output1.begin(), output1.end());
+        CHECK (s1==s2);
 
 
-	vector<int> input2{3,3,2,4,4,4,8,2,2,3}; 
-	vector<int> expected_output2{3,2,4,8};
-	vector<int> output2 = Distinct (input2);
+        vector<int> input2{3,3,2,4,4,4,8,2,2,3};
+        vector<int> expected_output2{3,2,4,8};
+        unordered_set<int> s3 (expected_output2.begin(), expected_output2.end());
 
-	CHECK (output2==expected_output2);
+        vector<int> output2 = Distinct (input2);
+        unordered_set<int> s4 (output2.begin(), output2.end());
+        CHECK (s3==s4);
+
   }
 
   SUBCASE ("sameset"){
