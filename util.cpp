@@ -46,6 +46,10 @@ int Selection (vector<int> & list, int left, int right, int k)
 
 }
 
+//return a vector that stores distinct numbers from the list,
+// i.e., duplicate values are removed.
+// if list=[3,2,4,2], a vector contains the values 3,2,4 should
+// be returned. 
 vector<int> Distinct(vector<int> & list)
 {
 	vector<int> result;
@@ -54,7 +58,9 @@ vector<int> Distinct(vector<int> & list)
 	return result; 
 }
 
-
+//Return true if the list1 and list2 stores the same set of numbers
+//if list1=[2,3,6], and list2=[3,2,6,6], the function returns true (as they both 
+//contain the same set of numbers: {2,3,6}. 
 bool SameSet (const vector<int> & list1, const vector<int> & list2)
 {
 	//Todo by you
